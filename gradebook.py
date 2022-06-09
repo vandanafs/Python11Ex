@@ -55,12 +55,14 @@ class Classroom():
     def add_instructor(self,instructor):
         if instructor.instructor_id not in self.instructors:
             self.instructors[instructor.instructor_id]=instructor
+          # self.instructors.append(instructor)
         else:
             print("Instructor already exist")
 
     def remove_instructor(self,instructor):
          if instructor.instructor_id == self.instructors:
              del self.instructors[instructor.instructor_id]
+             #self.instructors.remove(instructor)
          else:
              print("Instructor doesn't exist")
 
